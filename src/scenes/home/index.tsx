@@ -52,7 +52,17 @@ const Home = ({ setSelectedPage }: Props) => {
         </div>
       </div>
       {/* sponsors */}
-      <div></div>
+      {!isAboveMediumScreens && (
+        <div>
+          <div>
+            <div>
+              <img alt="redbull image" src={SponsorRedBull} />
+              <img alt="forbes image" src={SponsorForbes} />
+              <img alt="fortune image" src={SponsorFortune} />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
